@@ -50,6 +50,7 @@ test.each([
 
 test.each([
   ['bowmanbowman', 'Bowman'],
+  ['b', 'Bowman'],
   ['bowman', 'bowman'],
 ])('checking for an exception', (name, type) => {
   function wrapper() {
