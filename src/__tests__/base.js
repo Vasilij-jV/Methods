@@ -48,6 +48,14 @@ test.each([
   expect(coreObj.health).toBeCloseTo(expected);
 });
 
+test('function checking', () => {
+  const coreObj = new Character('bowman', 'Bowman');
+  coreObj.health = -1;
+  coreObj.damage(67);
+
+  expect(coreObj.health).toBe(-1);
+});
+
 test.each([
   ['bowmanbowman', 'Bowman'],
   ['b', 'Bowman'],
